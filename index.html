@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SichelTechnologies</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="back_video">
+        <source src="images/WhatsApp Video 2023-07-28 at 09.02.29.mp4"type="video/mp4">
+    </video>
+
+
+<nav>
+
+    <div class="logo">
+        <a href="#"><img src="images/SichelLogo.jpeg" alt="logo for SichelTechnologies"></a>
+        
+    </div>
+    <div class="toggle">
+        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+    </div>
+    <ul class="menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">CONTACT US</a></li>
+    </ul>
+    
+</nav>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    $(function(){
+        $(".toggle").on("click",function(){
+            if($(".menu").hasClass("active")){
+                $(".menu").removeClass("active");
+                $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>")
+        
+            }else{
+                $(".menu").addClass("active");
+                $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>")
+            }
+        });
+    });
+    
+</script>
+<div class="content">
+    <h1>Welcome to Sichel Technologies</h1>
+    <a href="#">Get Started</a>
+
+</div>
+
+<!--about-->
+<section id="about">
+    <h1 >COME TO SICHEL TECHNOLOGIES, AND LET'S GET IT DONE</h1>
+    <p1>We </p1>
+    <div class="feature_base">
+        <div class="inno"> 
+            <ion-icon name="settings"></ion-icon>
+            <h2>Innovative</h2>
+            <p2>Innovation that drives progress.We offer the best innovative solutions for any business or industry</p2>
+        </div>
+        <div class="prob"> 
+            <ion-icon name="build"></ion-icon>
+            <h2>Problem Solving</h2>
+            <p2>Simplify complexity with our problem-solving technology.</p2>
+        </div>
+        <div class="quality"> 
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h2>Quality</h2>
+            <p2>We're your one-stop for all your tech needs.We provide quality accessories and services to keep your tech running smoothly.</p2>
+        </div>
+    </div>
+  <!--Services-->
+  <section id="services">
+    <h1>SERVICES</h1>
+    <div class="ser_base">
+        <div class="sw_dev">
+            <h1>Software Development</h1>
+            <p>We offer a full range of software development services, from custom software development to ongoing maintenance and support.
+                We develop enterprise software, mobile applications and website.
+            </p>
+        </div>
+        <div class="comp_training">
+            <h2>Computer Training</h2>
+            <p>Our computer training services are designed to help individuals and businesses gain the skills and knowledge they need to use computers effectively.</p>
+        </div>
+    </div>
+  </section>  
+
+
+</section>
+<!--store-->
+<section id="store">
+    <h1>STORE</h1>
+    <div class="slider">
+        <figure>
+            <img src="images/slider.jpeg">
+            <img src="images/slider1.jpeg">
+            <img src="images/slider2.jpeg">
+            <img src="images/slider3.jpeg">
+            <img src="images/slider.jpeg">
+        </figure>
+
+    </div>
+    
+</section>
+<!--contact us-->
+<section id="contact"> 
+    <div class="adress">
+        <h1>CONTACT US</h1>
+        <h2>HEADQUARTERS</h2>
+        <p>6179 Josiah Tongogara</p>
+        <p>Kadoma</p>
+        <p>Zimbabwe</p>
+        <span><ion-icon name="call-outline"></ion-icon>+263 77 656 0042</span>
+        <span><ion-icon name="mail"></ion-icon>info@sitcheltechnologies@gmail.com</span>
+        <h3>CONNECT</h3>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Name" name="" id="">
+        <input type="text" placeholder="Email address" name="" id="">
+        <input type="text" placeholder="Message" name="" id="">
+        <div class="btn">
+            <a href="#">Send</a>
+        </div>
+
+    </div>
+
+</section>
+
+              
+</body>
+</html>
